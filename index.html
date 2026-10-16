@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R&amp;D Evidence for HMRC claims, in Jira</title>
+<meta name="description" content="A Jira app for UK companies claiming R&amp;D tax relief. Record the evidence HMRC asks for on each issue while the work happens, then build a claim pack for the Additional Information Form.">
+<style>
+:root{--ink:#17201c;--soft:#4c5a54;--line:#d7dfdb;--bg:#f6f8f7;--card:#fff;--green:#1d6b52;--gold:#b8860b}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ece9;--soft:#a5b3ad;--line:#2c3833;--bg:#111614;--card:#18201c;--green:#5cc29b;--gold:#e0b84f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 12px}
+h2{font-size:1.25rem;margin:40px 0 8px}
+p,li{color:var(--soft)}
+strong{color:var(--ink)}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--green);border:1px solid var(--green);border-radius:99px;padding:2px 10px;margin-bottom:16px}
+ol.q{counter-reset:q;list-style:none;padding:0}
+ol.q li{counter-increment:q;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;margin:8px 0;position:relative}
+ol.q li::before{content:counter(q);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--bg);font-weight:700;text-align:center;line-height:26px;font-size:.9rem}
+.box{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 16px}
+a{color:var(--green)}
+footer{margin-top:56px;font-size:.9rem;color:var(--soft);border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+<span class="tag">Jira Cloud app · runs on Atlassian</span>
+<h1>R&amp;D tax evidence, written down while the work happens</h1>
+<p>Since August 2023 every UK R&amp;D tax relief claim needs an Additional Information Form. For each project HMRC asks five questions, and in an enquiry it wants records from the time, not a story pieced together a year later. Most of that evidence already sits in Jira tickets. This app gives it a place on the ticket and gathers it at year end.</p>
+
+<h2>What it does</h2>
+<p><strong>On any issue</strong>, an "R&amp;D evidence" panel. Tick that the work counts, name the R&amp;D project it belongs to, and answer HMRC's questions as you go:</p>
+<ol class="q">
+<li>The main field of science or technology</li>
+<li>The baseline: what was known or possible when the work started</li>
+<li>The advance in knowledge or capability you were aiming for</li>
+<li>The scientific or technological uncertainties</li>
+<li>How the work tried to overcome them</li>
+</ol>
+<p>There's also a dated work log on each issue for short notes: what you tried, what failed, what you learned. Tag an epic and the time logged on its child issues counts towards that project.</p>
+<p><strong>On the project</strong>, an "R&amp;D claim pack" page. Pick the accounting period and it lists each R&amp;D project with the hours logged against it, says which projects need describing on the form (all of them if there are three or fewer; otherwise enough to cover over half the spend, between three and ten), drafts the five answers from what the team wrote, and gives hours by person as CSV for your adviser.</p>
+
+<h2>What it doesn't do</h2>
+<div class="box">
+<p style="margin:0">It doesn't decide whether your work qualifies, calculate the relief, or file anything with HMRC. It keeps the evidence and hours in order so you or your adviser can do those jobs faster and with better records. Hours stand in for spend when it suggests which projects to describe; check that against real staff costs.</p>
+</div>
+
+<h2 id="privacy">Privacy and data</h2>
+<p>The app runs on Atlassian's own Forge platform. Everything it records is saved as properties on your own Jira issues. It sends nothing to any outside server, and the developer can't see your data. Remove the app and the evidence stays on your issues as plain issue properties.</p>
+<p>The app reads issues, worklogs and your display name (to sign log entries) through Jira's API, as the signed-in user, so people only see what their Jira permissions already allow.</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: <a href="https://github.com/Darko893/rd-evidence/issues">open an issue on GitHub</a>. Answers usually within one working day (UK time).</p>
+
+<h2 id="terms">Terms</h2>
+<p>Provided as is. It's a record-keeping tool, not tax advice; the claim is your company's responsibility. Atlassian's Marketplace terms also apply.</p>
+
+<footer>R&amp;D Evidence for HMRC claims · made in the UK</footer>
+</main>
+</body>
+</html>
