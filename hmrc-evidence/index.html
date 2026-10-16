@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What HMRC asks for in an R&amp;D claim now, and what to keep from day one</title>
+<meta name="description" content="The claim notification, the Additional Information Form, the five project questions and the records HMRC expects you to have kept while the work happened. Plain guide for UK software companies and their accountants.">
+<link rel="canonical" href="https://darko893.github.io/rd-evidence/hmrc-evidence/">
+<style>
+:root{--ink:#17201c;--soft:#4c5a54;--line:#d7dfdb;--bg:#f6f8f7;--card:#fff;--green:#1d6b52;--gold:#b8860b}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ece9;--soft:#a5b3ad;--line:#2c3833;--bg:#111614;--card:#18201c;--green:#5cc29b;--gold:#e0b84f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 12px}
+h2{font-size:1.25rem;margin:40px 0 8px}
+p,li{color:var(--soft)}
+strong{color:var(--ink)}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--green);border:1px solid var(--green);border-radius:99px;padding:2px 10px;margin-bottom:16px}
+ol.q{counter-reset:q;list-style:none;padding:0}
+ol.q li{counter-increment:q;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;margin:8px 0;position:relative}
+ol.q li::before{content:counter(q);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--bg);font-weight:700;text-align:center;line-height:26px}
+.box{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 16px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95rem}
+td,th{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--soft)}
+th{color:var(--ink)}
+a{color:var(--green)}
+footer{margin-top:56px;font-size:.9rem;color:var(--soft);border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+<span class="tag">UK R&amp;D tax relief · records</span>
+<h1>What HMRC asks for in an R&amp;D claim now, and what to keep from day one</h1>
+<p>If your company claims R&amp;D tax relief, two forms now sit in front of the claim itself, and each project has to be described in a set way. The forms are quick when the records exist. The trouble starts when a year of work has to be rebuilt from memory after the year end. This page sets out what is asked for and what to keep as you go, in plain words, for software companies and the accountants who file for them.</p>
+
+<h2>The two forms</h2>
+<table>
+<tr><th>Form</th><th>Who</th><th>When</th><th>If missed</th></tr>
+<tr><td><strong>Claim notification</strong></td><td>First-time claimants, and anyone whose last claim was more than three years before the end of the notification period. Accounting periods starting on or after 1 April 2023.</td><td>Within six months of the end of the period of account.</td><td>The claim is invalid for that period.</td></tr>
+<tr><td><strong>Additional Information Form</strong> (AIF)</td><td>Every claim, since 8 August 2023.</td><td>Before, or on the same day as, the Company Tax Return. Same day: the form goes first.</td><td>HMRC removes the R&amp;D claim from the return.</td></tr>
+</table>
+<p>The notification asks for the company's references, the senior R&amp;D contact, every agent involved, the period dates and a short summary of the planned activities. The AIF asks for the same people and dates, the qualifying costs by category, and then the project descriptions.</p>
+
+<h2>Which projects to describe</h2>
+<ul>
+<li><strong>One to three projects:</strong> describe all of them.</li>
+<li><strong>Four to ten:</strong> describe at least three, chosen so that together they cover at least half of the qualifying spend.</li>
+<li><strong>More than ten:</strong> the same, but stop at ten; if half the spend needs more than ten projects, pick the ten with the highest spend.</li>
+</ul>
+<p>So you need to know, per project, how much was spent on it. For a software team that mostly means staff hours. If the hours were never logged against the project, this is where the claim stalls.</p>
+
+<h2>The five questions, per project</h2>
+<ol class="q">
+<li>The main field of science or technology.</li>
+<li>The baseline: what was already known or possible when the work started.</li>
+<li>The advance in knowledge or capability the project set out to achieve.</li>
+<li>The scientific or technological uncertainties it ran into.</li>
+<li>How the project tried to overcome them, including qualifying indirect activities.</li>
+</ol>
+<p>Question 2 is the one that catches people out. The baseline has to be what was known at the start, not what the team knows now. Written a year later it drifts towards what the team knows now. Questions 4 and 5 read best as a log of what was tried and what failed, and that log only exists if someone wrote it at the time.</p>
+
+<h2>What an enquiry wants to see</h2>
+<p>When HMRC opens a compliance check it asks for the evidence behind the descriptions. The useful kind is the kind made during the work: tickets, commits, notes, timesheets. A write-up produced for the claim is only as good as the records behind it. The questions that come up are practical ones. Who decided this work was R&amp;D, and what are their qualifications? Which tickets were part of it? How many hours did each person put in? What did you try that did not work?</p>
+
+<h2>What to keep as you go</h2>
+<div class="box">
+<p><strong>For each piece of work:</strong> whether it counts as R&amp;D, which project it belongs to, and a dated note when something was tried, failed or was learned.</p>
+<p><strong>For each project:</strong> the baseline written at the start, the advance sought, and the uncertainties as they come up during the work.</p>
+<p><strong>For each person:</strong> hours per project per period, and who the competent professional was.</p>
+<p style="margin-bottom:0"><strong>For the claim:</strong> which costs were subcontracted or externally provided workers, and the PAYE references the form asks for.</p>
+</div>
+<p>None of this needs a special system. A column in a spreadsheet does it. The reason it rarely gets done is that it lives in a different place from the work, and nobody opens it on a Tuesday afternoon when the clever bit fails.</p>
+
+<h2>Keeping it inside Jira</h2>
+<p>We make a small Jira Cloud app that puts the questions on the issue itself. Tick that the work qualifies, name the project, answer the five questions as they become clear, and keep a dated log of attempts. At the year end a project page adds up the logged hours per R&amp;D project, says which projects need describing under the rules above, and drafts the AIF answers from what was written during the year. It runs on Atlassian's own platform and the data stays on your Jira issues. <a href="../">How it works</a> · <a href="../try/">Install a free copy on your site</a>.</p>
+
+<h2>Sources</h2>
+<p>GOV.UK: <a href="https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief">Tell HMRC that you're planning to claim R&amp;D tax relief</a> and <a href="https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief">Submit detailed information before you claim R&amp;D tax relief</a> (last updated 26 September 2025). Checked 16 October 2026. This page is general information, not tax advice; the claim is the company's responsibility.</p>
+
+<footer>R&amp;D Evidence for HMRC claims · made in the UK</footer>
+</main>
+<script data-goatcounter="https://dark893.goatcounter.com/count" data-goatcounter-settings='{"path":"/rd-evidence/hmrc-evidence"}' async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
